@@ -1,0 +1,25 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Introduction" />
+
+# Seun UI
+
+Accessible React components. Each one starts from the native element that already has the right semantics (`<button>`, `<dialog>`, `<select>`, `<table>`, radio inputs) and adds only what the platform lacks, following the WAI-ARIA Authoring Practices for the composite widgets (menu button, tabs, combobox).
+
+```bash
+npm install seun-ui
+```
+
+```tsx
+import "seun-ui/styles.css";
+import { Button, Dialog } from "seun-ui";
+```
+
+## Theming
+
+The stylesheet ships no CSS reset, and every utility is prefixed (`su:`), so it can sit beside your own Tailwind or CSS. Colours are custom properties: override `--su-color-accent`, `--su-color-surface`, `--su-color-fg` and the rest on `:root`. Add `data-su-theme="dark"` to any ancestor for the dark palette. Use the **Theme** toolbar button to preview it.
+
+## Accessibility checks
+
+- Every story is checked by the a11y panel (axe-core), set to fail on violations.
+- Unit tests (Vitest + Testing Library) cover keyboard behaviour and ARIA wiring, and run axe on each component. jsdom has no layout, so colour contrast is only checked here in Storybook.
