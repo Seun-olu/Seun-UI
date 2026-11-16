@@ -24,6 +24,7 @@ const preview: Preview = {
     // Fail the a11y panel (and test runs) on violations rather than just reporting them.
     a11y: { test: "error" },
     controls: { matchers: { color: /(background|color)$/i } },
+    options: { storySort: { order: ["Introduction", "Forms", "Overlays", "Navigation", "Data"] } },
   },
   tags: ["autodocs"],
 };

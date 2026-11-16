@@ -33,7 +33,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "storybook build --quiet",
     "test:pack": "node scripts/test-pack.mjs",
     "test:a11y": "storybook build --quiet -o storybook-static && node scripts/a11y-stories.mjs"
   },
