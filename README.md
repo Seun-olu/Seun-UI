@@ -2,6 +2,8 @@
 
 Accessible React components. Each one starts from the native element that already has the right semantics (`<button>`, `<dialog>`, `<select>`, `<table>`, radio inputs). It adds only what the platform lacks, following the [WAI-ARIA Authoring Practices](https://www.w3.org/WAI/ARIA/apg/) for the composite widgets (menu button, tabs, combobox).
 
+**Docs site:** https://seunui.netlify.app/ (Storybook, built by `netlify.toml`).
+
 **Status:** version 0.1.0. Built, tested, and packed with `npm pack`. **Not published to npm.**
 
 ## Components
